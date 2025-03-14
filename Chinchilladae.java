@@ -1,5 +1,7 @@
 public class Chinchilladae extends Animal
 {
+    EasySound voice = new EasySound("wook.wav");
+    
     public Chinchilladae (String r)
     {
         super(r);
@@ -7,6 +9,7 @@ public class Chinchilladae extends Animal
 
     public String speak()
     {
+        voice.play();
         return "wook";
     }
 
