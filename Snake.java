@@ -1,4 +1,6 @@
 public class Snake extends Animal {
+    EasySound voice = new EasySound("snake.wav");
+    
     public Snake(String s) {
         super(s);
     }
@@ -17,6 +19,7 @@ public class Snake extends Animal {
     public String toString() {
         String str = "";
         str += "Hi! I'm a Snake named " + getName() + "! ";
+        voice.play();
         str += speak() + " " + eat();
         return str;
     }
